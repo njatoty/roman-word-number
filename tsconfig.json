@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "target": "esnext",         // Modern JavaScript target
+    "module": "ESNext",         // ECMAScript modules for Rollup
+    "moduleResolution": "node",
+    "outDir": "./dist",
+    "declaration": true,        // Keep for generating .d.ts files
+    "declarationMap": true,     // Useful for debugging .d.ts
+    "sourceMap": true,          // Enable source maps for debugging
+    "inlineSources": true,      // Inline source maps for better debugging
+    "strict": true,
+    "esModuleInterop": true,    // Enable interoperability between ESM and CJS
+    "skipLibCheck": true        // Skip checking of declaration files
+  },
+  "exclude": ["node_modules", "dist", "src/test", "src/demo"],
+  "include": ["src/**/*.ts", "src/**/*.d.ts"]  // Ensure .ts and .d.ts files are included
+}
