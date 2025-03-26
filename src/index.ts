@@ -1,3 +1,4 @@
-import { calculateWordValue } from "./alphabet";
+import { alphabetWordToNumber } from "./alphabet";
+import { romanWordToNumber } from "./roman";
 
-export { calculateWordValue };
+export { alphabetWordToNumber, romanWordToNumber };
