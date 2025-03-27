@@ -1,10 +1,2 @@
-import { alphabetValues } from "./utils";
-/**
- * Method to calculate the value of a word
- * @param {string} word Word to calculate
- * @returns {number} Value of the word
- * @example
- * calculateWordValue('ABC') // 54
- */
-export const calculateWordValue = (word) => word.split('').reduce((acc, letter) => acc + alphabetValues[letter], 0);
+"use strict";class t{static generate(t,e){return Array.from({length:e.charCodeAt(0)-t.charCodeAt(0)+1},((e,a)=>String.fromCharCode(t.charCodeAt(0)+a)))}}class e{alphabets;multiplier=9;constructor(t){this.multiplier=9,this.alphabets=t}get(){return this.alphabets}setMultiplier(t){this.multiplier=t}getValues(){return this.alphabets.reduce(((t,e,a)=>(t[e]=(a+1)*this.multiplier,t)),{})}}class a{alphabetLetters;constructor(){this.alphabetLetters=t.generate("A","Z")}omit(t){this.alphabetLetters=this.alphabetLetters.filter((e=>!t.includes(e)))}get(){return this.alphabetLetters}}class r{alphabetLetters;alphabetValue;constructor(){this.alphabetLetters=new a,this.alphabetValue=new e(this.alphabetLetters.get())}calculateWordValue(t){return t?t.toUpperCase().split("").reduce(((t,e)=>t+this.alphabetValue.getValues()[e]),0):0}}const s={I:1,V:5,X:10,L:50,C:100,D:500,M:1e3};class l{numeral;constructor(){this.numeral=s}addRomanNumeral(t,e){this.numeral[t]=e}updateRomanNumeral(t,e){this.numeral[t]=e}setNumeral(t){Object.assign(s,t)}getNumeral(){return this.numeral}}class i{mapping;constructor(){this.mapping={U:"V"}}addMapping(t,e){this.mapping[t]=e}getMapping(){return this.mapping}setTransliterator(t){this.mapping=t}updateTransliterator(t,e){this.mapping[t]=e}}class n{numeral;transliterator;constructor(){this.numeral=new l,this.transliterator=new i}romanNumeralToNumber(t){return t.toUpperCase().split("").reduce(((t,e)=>{const a=this.transliterator.getMapping();return t+(this.numeral.getNumeral()[a[e]||e]||0)}),0)}}const p=new n,h=new r;exports.Alphabet=r,exports.Roman=n,exports.alphabet=h,exports.roman=p;
 //# sourceMappingURL=index.js.map

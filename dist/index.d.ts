@@ -1,9 +1,6 @@
-/**
- * Method to calculate the value of a word
- * @param {string} word Word to calculate
- * @returns {number} Value of the word
- * @example
- * calculateWordValue('ABC') // 54
- */
-export declare const calculateWordValue: (word: string) => number;
+import { Alphabet } from "./alphabet";
+import { Roman } from "./roman";
+declare const roman: Roman;
+declare const alphabet: Alphabet;
+export { Alphabet, Roman, alphabet, roman };
 //# sourceMappingURL=index.d.ts.map

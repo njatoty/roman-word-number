@@ -6,6 +6,9 @@ tsconfig.json
 # Exclude tests and test configs
 __tests__/
 *.spec.js
+*.test.js
+*.spec.ts
+*.test.ts
 jest.config.js
 
 # Exclude source files if only dist is needed

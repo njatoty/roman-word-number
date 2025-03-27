@@ -8,11 +8,11 @@
   ],
   "scripts": {
     "test": "jest",
-    "build-lib": "rollup -c rollup.config.ts",
+    "build-lib": "rollup -c rollup.config.js",
     "build": "tsc"
   },
   "keywords": [],
-  "author": "",
+  "author": "njatoty",
   "license": "ISC",
   "description": "",
   "devDependencies": {

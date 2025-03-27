@@ -21,7 +21,6 @@ class RomanNumeral {
    * @param letter
    * @param value
    * @returns {void}
-   * @memberof RomanNumeral
    */
   public addRomanNumeral(letter: string, value: number): void {
     this.numeral[letter as RomanNumeralKey] = value;
@@ -113,7 +112,7 @@ export class Roman {
 
   /**
    * Method to convert Roman numerals to numbers
-   * @param {string} roman Roman numeral
+   * @param {string} roman Roman word
    * @returns {number} Number
    */
   public romanNumeralToNumber(roman: string): number {
