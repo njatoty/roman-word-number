@@ -1,4 +1,6 @@
 import { alphabetWordToNumber } from "./alphabet";
-import { romanWordToNumber } from "./roman";
+import { Roman } from "./roman";
 
-export { alphabetWordToNumber, romanWordToNumber };
+const roman = new Roman();
+
+export { alphabetWordToNumber, roman };
